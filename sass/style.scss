@@ -1,0 +1,98 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+
+html {
+    scroll-behavior: smooth;
+}
+
+@mixin button-variant(
+  $background, 
+  $border, 
+  $hover-border: blue,
+  $active-background: darken($background, 10%),
+  $active-border: darken($border, 12.5%)
+) { 
+  background-color: $background;
+  border: 1px solid $border;
+
+  &:hover {
+    background-color: $hover-background;
+    border-color: $hover-border;
+  }
+}
+
+$primary: #1B262C;  
+$secondary: #3282B8;
+$tertiary: #BBE1FA;
+$spacer: 1rem;
+  
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 3,
+    5: $spacer * 10,
+);
+
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100vh;
+}
+
+.about{
+    width: 100%;
+}
+.redemption-image{
+    width: 100%;
+    height: 85vh;
+}
+
+.redemption {
+    background-image: url('/img/banner 1.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+.redemption > div{
+    width: 40%;
+    height: fit-content;
+}
+.gradient-bg{
+    background: linear-gradient(135deg, #1B262C, #0C405F, #3282B8, #BBE1FA);
+}
+
+.download-icons{
+    width: 120px;
+}
+footer{
+    background: #1B262C;
+}
+
+.icon-color {
+    color: #BBE1FA
+}
+
+li{
+    list-style: none;
+}
+
+.package {
+    width: 350px;
+}
+
+.login {
+    height: 100vh;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
