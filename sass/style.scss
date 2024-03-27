@@ -64,6 +64,10 @@ $spacers: (
     width: 40%;
     height: fit-content;
 }
+
+.card-size > div{
+    height: 500px;
+}
 .gradient-bg{
     background: linear-gradient(135deg, #1B262C, #0C405F, #3282B8, #BBE1FA);
 }
