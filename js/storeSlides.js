@@ -52,5 +52,45 @@ class CarouselController {
     }
 }
 
-const carouselController = new CarouselController('.indicatorsProduct', '.Product', '#packageSlide1', '#packageSlide2', '#packageNext', '#packagePrev');
-const coinsCarouselController = new CarouselController('.IndicatorsCoins', '.Coins', '#CoinsSlide1', '#coin-next', '#CoinsSlide2', '#coin-prev');
+const carouselController = new CarouselController('.indicatorsProduct', '.Product', '#packageSlide1', '#packageNext', '#packageSlide2', '#packagePrev');
+const coinsCarouselController = new CarouselController('.IndicatorsCoins', '.Coins', '#CoinsSlide1', '#CoinPrev', '#CoinsSlide2', '#CoinNext');
+
+
+class ItemDescription {
+    constructor(idButton, descriptionId) {
+        this.idButton = idButton;
+        this.descriptionId = descriptionId;
+
+        document.querySelectorAll(this.idButton).forEach(item => {
+            item.addEventListener("mouseenter", () => {
+                this.updateDescription();
+            });
+        
+            item.addEventListener("mouseleave", () => {
+                this.hideDescription();
+            });
+        });
+    }
+
+    updateDescription() {
+        const descriptionContainer = document.querySelector(this.descriptionId);
+        if (descriptionContainer) {
+            descriptionContainer.style.display = 'block';
+        }
+    }
+
+    hideDescription() {
+        const descriptionContainer = document.querySelector(this.descriptionId);
+        if (descriptionContainer) {
+            descriptionContainer.style.display = 'none';
+        }
+    }
+}
+
+for (let i = 1; i <= 16; i++) {
+    const buttonId = `#itemButton${i}`;
+    const descriptionId = `#itemDescription${i}`;
+    new ItemDescription(buttonId, descriptionId);
+}
+
+
