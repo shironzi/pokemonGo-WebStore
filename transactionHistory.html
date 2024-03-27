@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
+    
     <title>Document</title>
 </head>
 <body>
-    <div class="login custom-container-fluid text-primary d-flex justify-content-center align-items-center">
+    <div class="custom-container-fluid text-primary d-flex justify-content-center align-items-center">
         <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top px-5">
             <a href="index.html" class="navbar-brand">
               <img src="./img/logo maxwynn.png" alt="" class="logo">
@@ -51,42 +52,41 @@
                 </li>
               </ul>
             </div>
-          </nav>
-
-
-
-
-        <div class="justify-content-center align-items-center" style="width: 25%;">
-            <form class="card" id="inputPassword">
-                <img src="./img/pichachu.png" alt="" class="w-100 h-auto">
-                <img src="./img/pokemon-ball.png" alt="" class="border border-4 border-light bg-light rounded-circle" style="width:15%; margin:auto; margin-top:-32px;">
-                <div class="px-4 pt-2 pb-4">
-                    <h2 class="card-title fw-bold">Register</h2>
-                        <div class="mb-3">
-                            <label for="playerId" class="form-label fw-semibold">Player ID</label>
-                            <input type="text" class="form-control" id="playerId" value="0" aria-describedby="playerIdHelp" readonly disabled>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" id="ign" placeholder="IGN" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" id="InputEmail" placeholder="Email address" required>
-                        </div>
-                        <div id="passwordAlert" class="alert alert-danger" style="display: none;">
-                            <h6>Please make sure the password you enter is same.</h6>
-                        </div>
-                        <div class="mb-3">
-                            <input type="password" class="form-control" id="Password" placeholder="Password" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="password" class="form-control" id="ConfirmPassword" placeholder="Confirm Password" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary fw-bold" style="width: 100%;" id="submit">Sign Up</button>
-                </div>
-            </form>
+        </nav>
+        <div class="mt-5 transaction-item">
+            <h2 class="text-center">Transaction History</h2>
+            <table class="table table-striped table-bordered">
+                <thead class="bg-primary">
+                  <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Order No.</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">2024-03-25</th>
+                    <td>172381871218273981723</td>
+                    <td>370</td>
+                    <td>Paid</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2024-03-25</th>
+                    <td>172381871218273981723</td>
+                    <td>370</td>
+                    <td>Paid</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2024-03-25</th>
+                    <td>172381871218273981723</td>
+                    <td>370</td>
+                    <td>Paid</td>
+                  </tr>
+                </tbody>
+              </table>
         </div>
     </div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-    <script src="./js/register.js"></script>
 </body>
 </html>

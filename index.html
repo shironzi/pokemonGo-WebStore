@@ -6,12 +6,13 @@
 
     <link rel="stylesheet" href="/css/style.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <title>POKEMON GO</title>
 </head>
 <body>
   <div class="custom-container-fluid text-primary">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top px-5">
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 fixed-top ">
       <a href="index.html" class="navbar-brand">
         <img src="./img/logo maxwynn.png" alt="" class="logo">
       </a>
@@ -35,8 +36,15 @@
           <li class="nav-item mx-2">
             <a href="/store.html" class="nav-link fw-bold">STORE</a>
           </li>
-          <li class="nav-item mx-2">
-            <a href="/register.html" class="nav-link fw-bold">REGISTER</a>
+          <li class="dropdown nav-item mx-2">
+            <button class="btn dropdown-toggle fw-bold dropdowntext" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ACCOUNT
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/profile">Profile</a></li>
+              <li><a class="dropdown-item" href="/transactionHistory.html">Transaction History</a></li>
+              <li><a class="dropdown-item" href="/register.html">Register</a></li>
+            </ul>
           </li>
           <li class="nav-item mx-2">
             <a href="/cart.html" class="nav-link fw-bold">CART</a>

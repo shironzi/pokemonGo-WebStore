@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="/css/style.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
     
     <title>Document</title>
 </head>
 <body>
-    <div class="login custom-container-fluid text-primary d-flex justify-content-center align-items-center">
+    <div class="custom-container-fluid text-primary justify-content-center align-items-center">
         <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top px-5">
             <a href="index.html" class="navbar-brand">
               <img src="./img/logo maxwynn.png" alt="" class="logo">
@@ -51,42 +53,52 @@
                 </li>
               </ul>
             </div>
-          </nav>
-
-
-
-
-        <div class="justify-content-center align-items-center" style="width: 25%;">
-            <form class="card" id="inputPassword">
-                <img src="./img/pichachu.png" alt="" class="w-100 h-auto">
-                <img src="./img/pokemon-ball.png" alt="" class="border border-4 border-light bg-light rounded-circle" style="width:15%; margin:auto; margin-top:-32px;">
-                <div class="px-4 pt-2 pb-4">
-                    <h2 class="card-title fw-bold">Register</h2>
-                        <div class="mb-3">
-                            <label for="playerId" class="form-label fw-semibold">Player ID</label>
-                            <input type="text" class="form-control" id="playerId" value="0" aria-describedby="playerIdHelp" readonly disabled>
+        </nav>
+        <div class="my-5 px-5">
+              <div class="row d-flex justify-content-center align-items-center h-100 px-5">
+                <div class="col">
+                  <div class="card mb-3" style="border-radius: .5rem;">
+                    <div class="row g-0">
+                      <div class="col-md-4 gradient-custom text-center text-white"
+                        style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+                        <img src="https://i.pinimg.com/736x/18/d9/e1/18d9e1307018dbc76750ca7d5124fccd.jpg"
+                          alt="Avatar" class="img-fluid my-5 rounded-circle" style="width: 200px;" />
+                        <h4 class="pb-5 fw-semibold">John Hanke</h4>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body p-4">
+                          <h6>Information</h6>
+                          <hr class="mt-0 mb-4">
+                          <div class="row pt-1">
+                            <div class="col-6 mb-3">
+                                <h6>Player Id</h6>
+                                <p class="text-muted">5684312</p>
+                              </div>
+                            <div class="col-6 mb-3">
+                              <h6>Email</h6>
+                              <p class="text-muted">pokemonGo@game.com</p>
+                            </div>
+                            <div class="col-6 mb-3">
+                              <h6>IGN</h6>
+                              <p class="text-muted">ash9238</p>
+                            </div>
+                            
+                          </div>
+                          <hr class="mt-0 mb-4">
+                          <div class="row pt-1">
+                            <div class="col-6 mb-3">
+                              <h6>Medals</h6>
+                              <p class="text-muted">none</p>
+                            </div>
+                          </div>
                         </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" id="ign" placeholder="IGN" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" id="InputEmail" placeholder="Email address" required>
-                        </div>
-                        <div id="passwordAlert" class="alert alert-danger" style="display: none;">
-                            <h6>Please make sure the password you enter is same.</h6>
-                        </div>
-                        <div class="mb-3">
-                            <input type="password" class="form-control" id="Password" placeholder="Password" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="password" class="form-control" id="ConfirmPassword" placeholder="Confirm Password" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary fw-bold" style="width: 100%;" id="submit">Sign Up</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </form>
-        </div>
+              </div>
+            </div>
     </div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-    <script src="./js/register.js"></script>
 </body>
 </html>

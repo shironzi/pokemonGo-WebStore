@@ -1,4 +1,12 @@
-const usernames = []
+function generateRandomId() {
+    let randomId = Math.floor(Math.random() * 1000000);
+    return randomId;
+}
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById("playerId").value = generateRandomId();
+});
+
 
 
 document.getElementById("inputPassword").addEventListener("submit", (event) => {
@@ -14,3 +22,4 @@ document.getElementById("inputPassword").addEventListener("submit", (event) => {
     }
     
 });
+
