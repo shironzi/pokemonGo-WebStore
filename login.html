@@ -4,77 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="text.css">
     <link rel="stylesheet" href="/css/style.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap JavaScript and dependencies -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+      
     <title>Document</title>
 </head>
-<body>
-  <div class="login custom-container-fluid text-primary d-flex justify-content-center align-items-center">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top px-5">
-      <a href="index.html" class="navbar-brand">
-        <img src="./img/logo maxwynn.png" alt="" class="logo">
-      </a>
-      <div class="navbar-collapse justify-content-end" id="navbarExample">
-        <ul class="navbar-nav">
-          <li class="nav-item mx-2">
-            <a href="/index.html" class="nav-link fw-bold">HOME</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a href="/index.html#about" class="nav-link fw-bold">ABOUT</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a href="/index.html#redemption" class="nav-link fw-bold">REDEMPTION</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a href="/index.html#downloads" class="nav-link fw-bold">DOWNLOAD</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a href="/index.html#events" class="nav-link fw-bold">NEWS & EVENTS</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a href="/store.html" class="nav-link fw-bold">STORE</a>
-          </li>
-          <li class="dropdown nav-item mx-2">
-            <button class="btn btn-secondary dropdown-toggle fw-bold dropdowntext" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              ACCOUNT
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/profile.html">Profile</a></li>
-              <li><a class="dropdown-item" href="/transactionHistory.html">Transaction History</a></li>
-              <li><a class="dropdown-item" href="/register.html">Register</a></li>
+<body style="height: 100vh;">
+  <div class="login custom-container-fluid text-primary">
+    <nav class="navbar bg-secondary fixed-top" style="padding: 5px 10%;">
+      <div class="d-flex justify-content-between" style="width: 100%;">
+        <a href="index.html" class="navbar-brand">
+          <img class="logo" src="./img/logo maxwynn.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 me-3">
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html#about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html#redemption">REDEMPTION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html#events">NEWS & EVENTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html#downloads">DOWNLOAD</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/store.html">STORE</a>
+              </li>
+              <li class="dropdown nav-item">
+                <button class="border-0 dropdown-toggle bg-white fw-bold dropdowntext text-body-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ACCOUNT
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/profile.html">Profile</a></li>
+                  <li><a class="dropdown-item" href="/transactionHistory.html">Transaction History</a></li>
+                  <li><a class="dropdown-item" href="/register.html">Register</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/cart.html">CART</a>
+              </li>
             </ul>
-          </li>
-          <li class="nav-item mx-2">
-            <a href="/cart.html" class="nav-link fw-bold">CART</a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </nav>
-    <div class="justify-content-center align-items-center" style="width: 25%;">
-      <form class="card">
-        <img src="./img/pichachu.png" alt="" class="w-100 h-auto">
-        <img src="./img/pokemon-ball.png" alt="" class="border border-4 border-light bg-light rounded-circle" style="width:15%; margin:auto; margin-top:-32px;">
-        <div class="p-4">
-          <h2 class="card-title">Sign in</h2>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div>
-          <div class="">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-4">
-            <a href="">Forgot Password?</a>
-          </div>
-          <button type="submit" class="btn btn-primary fw-bold" style="width: 100%;">Sign in</button>
-          <h6 class="fw-light mt-4 text-center">Don't have an account? <a href="./register.html">Sign up</a></h6>
+  <div class="justify-content-center align-items-center" style="width: 100%;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="card">
+            <div class="d-flex justify-content-center mb-3">
+              <img src="./img/pichachu.png" alt="" class="w-100 h-auto" style="max-height: 50%;">
+            </div>
+            <div class="d-flex justify-content-center mb-3">
+              <img src="./img/pokemon-ball.png" alt="" class="border border-4 border-light bg-light rounded-circle" style="width:15%; margin-top: -65px;">
+            </div>
+            <div class="p-4">
+              <h2 class="card-title text-center">Sign in</h2>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-4">
+                <a href="" class="text-center">Forgot Password?</a>
+              </div>
+              <button type="submit" class="btn btn-primary fw-bold" style="width: 100%;">Sign in</button>
+              <h6 class="fw-light mt-4 text-center">Don't have an account? <a href="./register.html">Sign up</a></h6>
+            </div>
+          </form>
         </div>
-      </form>
+      </div>
     </div>
   </div>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
+

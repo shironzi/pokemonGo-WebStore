@@ -7,26 +7,33 @@ html {
 
 $primary: #1B262C;  
 $secondary: #3282B8;
-$tertiary: #BBE1FA;
 $spacer: 1rem;
-  
 
-$navbar-padding-x: 150px;
+// @include responsive-spacing;
+// @media (max-width: 768px) {
 
+//     $spacers: (
+//         0: 0,
+//         1: $spacer * .25,
+//         2: $spacer * .5,
+//         3: $spacer,
+//         4: $spacer * .25,
+//         5: $spacer * 500,
+//     );
+
+//     @include responsive-spacing;
+// }
 
 $spacers: (
     0: 0,
     1: $spacer * .25,
     2: $spacer * .5,
     3: $spacer,
-    4: $spacer * 3,
+    4: $spacer * 2.5,
     5: $spacer * 10,
 );
-
-
-.logo {
+.logo{
     width: 200px;
-    height: auto;
 }
 
 .banner-image {
@@ -62,7 +69,9 @@ $spacers: (
 }
 
 .download-icons{
-    width: 120px;
+    width: fit-content;
+    max-width: 120px;
+    display: block;
 }
 footer{
     background: #1B262C;
@@ -81,7 +90,7 @@ li{
 }
 
 .login {
-    height: 100vh;
+    height: 100%;
     background-image: url(../img/bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -100,19 +109,6 @@ li{
     padding: 20px;
     box-sizing: border-box;
 }
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-.size > button{
-    width: 275px;
-    height: 275px;
-=======
-<<<<<<< HEAD
->>>>>>> 9974a7e238e535cb959b3195d0f9721c3424a0ae
->>>>>>> 1d3e42a6653c37d3aa237d20cac098db128c7d40
 .size > button{
     width: 275px;
     height: 275px;
@@ -121,19 +117,13 @@ li{
     width: 275px;
     height: 275px;
 }
-<<<<<<< HEAD
 .size > button{
     width: 275px;
     height: 275px;
-=======
-.card{
-    width: 500px;
-<<<<<<< HEAD
-=======
->>>>>>> 53b1d695d556ed23438a6956c8322be841a7bf10
->>>>>>> 269c4d27c83ed884e671098e24d127639397ce8b
->>>>>>> 9974a7e238e535cb959b3195d0f9721c3424a0ae
->>>>>>> 1d3e42a6653c37d3aa237d20cac098db128c7d40
+}
+.size > button{
+    width: 275px;
+    height: 275px;
 }
 
 
@@ -174,28 +164,14 @@ li{
     background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
 }
 
-$breakpoints: (
-    "xs": "max-width: 575.98px",
-    "sm": "(min-width: 576px) and (max-width: 767.98px)",
-    "md": "(min-width: 768) and (max-width: 991.98px)",
-    "md": "(min-width: 992) and (max-width: 1199.98px)",
-    "md": "(min-width: 1200) and (max-width: 1399.98px)",
-    "xs": "min-width: 1400px"
-);
+.responsive{
+    height: fit-content; 
+    min-height: 60vh;
+}
 
-@mixin breakpoints($user-value){
-    $my-map: map-get($breakpoints, $user-value );
-    @if $my-map {
-        @media (#{$my-map}){
-            @content
-        }
-    }
-};
-
-body{
-    @include breakpoints(sm){
-        background-color: #f6d365
-    }
+.widthresponsive{
+    width: fit-content; 
+    min-width: 60vh;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

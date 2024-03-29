@@ -10,69 +10,80 @@
 </head>
 <body>
     <div class="custom-container-fluid text-primary">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top px-5">
-            <a href="index.html" class="navbar-brand">
-              <img src="./img/logo maxwynn.png" alt="" class="logo">
-            </a>
-            <div class="navbar-collapse justify-content-end" id="navbarExample">
-              <ul class="navbar-nav">
-                <li class="nav-item mx-2">
-                  <a href="/index.html" class="nav-link fw-bold">HOME</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/index.html#about" class="nav-link fw-bold">ABOUT</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/index.html#redemption" class="nav-link fw-bold">REDEMPTION</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/index.html#downloads" class="nav-link fw-bold">DOWNLOAD</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/index.html#events" class="nav-link fw-bold">NEWS & EVENTS</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/store.html" class="nav-link fw-bold">STORE</a>
-                </li>
-                <li class="dropdown nav-item mx-2">
-                  <button class="btn btn-secondary dropdown-toggle fw-bold dropdowntext" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    ACCOUNT
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/profile.html">Profile</a></li>
-                    <li><a class="dropdown-item" href="/transactionHistory.html">Transaction History</a></li>
-                    <li><a class="dropdown-item" href="/register.html">Register</a></li>
+        <nav class="navbar bg-secondary fixed-top" style="padding: 5px 10%;">
+            <div class="d-flex justify-content-between" style="width: 100%;">
+              <a href="index.html" class="navbar-brand">
+                <img class="logo" src="./img/logo maxwynn.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 me-3">
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold" href="/index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold" href="/index.html#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold" href="/index.html#redemption">REDEMPTION</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold" href="/index.html#events">NEWS & EVENTS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold" href="/index.html#downloads">DOWNLOAD</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold" href="/store.html">STORE</a>
+                    </li>
+                    <li class="dropdown nav-item">
+                      <button class="border-0 dropdown-toggle bg-white fw-bold dropdowntext text-body-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        ACCOUNT
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/profile.html">Profile</a></li>
+                  <li><a class="dropdown-item" href="/transactionHistory.html">Transaction History</a></li>
+                  <li><a class="dropdown-item" href="/register.html">Register</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold" href="/cart.html">CART</a>
+                    </li>
                   </ul>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/cart.html" class="nav-link fw-bold">CART</a>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
-        </nav>
+          </nav>
 
-        <div class="justify-content-center py-5 px-5">
+          <div class="justify-content-center py-5 px-md-5">
             <div>
-                <h1 class="mb-3">LIMITED OFFERS</h1>
+                <h1 class="mb-3 text-center">LIMITED OFFERS</h1>
             </div>
             <div class="d-flex justify-content-center">
                 <div class="card mb-3 p-4" style="max-width: 60%;">
                     <div class="row g-0">
                         <div class="col-md-8">
-                            <div class="d-flex">
-                                <h5 class="border me-2 p-2 rounded bg-primary text-light fs-6">ONE TIME ONLY</h5>
-                                <h5 class="border p-2 rounded bg-primary text-light fs-6">FEATURED</h5>
+                            <div class="d-flex flex-wrap">
+                                <h5 class="border me-2 mb-2 p-2 rounded bg-primary text-light fs-6">ONE TIME ONLY</h5>
+                                <h5 class="border mb-2 p-2 rounded bg-primary text-light fs-6">FEATURED</h5>
                             </div>
-                            <h3 class="card-title my-3">Rogoue of the Jungle <br>(Web Version)</h3>
+                            <h3 class="card-title my-3">Rogue of the Jungle <br>(Web Version)</h3>
                             <h5 class="border p-2 rounded bg-primary text-light fs-6" style="width: fit-content;">LIMITED-TIME ONLY</h5>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 d-flex justify-content-center align-items-center">
                             <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fweb-season-14-ticket-bundle.png&w=384&q=75" class="img-fluid rounded-start" alt="...">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
 
         <div id="carouselExampleProduct" class="carousel slide px-5">
             <h1 class="pb-3">PACKAGES</h1>

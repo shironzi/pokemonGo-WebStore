@@ -12,81 +12,92 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="custom-container-fluid text-primary d-flex justify-content-center align-items-center">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top px-5">
-            <a href="index.html" class="navbar-brand">
-              <img src="./img/logo maxwynn.png" alt="" class="logo">
-            </a>
-            <div class="navbar-collapse justify-content-end" id="navbarExample">
-              <ul class="navbar-nav">
-                <li class="nav-item mx-2">
-                  <a href="/index.html" class="nav-link fw-bold">HOME</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/index.html#about" class="nav-link fw-bold">ABOUT</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/index.html#redemption" class="nav-link fw-bold">REDEMPTION</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/index.html#downloads" class="nav-link fw-bold">DOWNLOAD</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/index.html#events" class="nav-link fw-bold">NEWS & EVENTS</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/store.html" class="nav-link fw-bold">STORE</a>
-                </li>
-                <li class="dropdown nav-item mx-2">
-                  <button class="btn btn-secondary dropdown-toggle fw-bold dropdowntext" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    ACCOUNT
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/profile.html">Profile</a></li>
-                    <li><a class="dropdown-item" href="/transactionHistory.html">Transaction History</a></li>
-                    <li><a class="dropdown-item" href="/register.html">Register</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/cart.html" class="nav-link fw-bold">CART</a>
-                </li>
-              </ul>
-            </div>
-        </nav>
-        <div class="mt-5 transaction-item">
-            <h2 class="text-center">Transaction History</h2>
-            <table class="table table-striped table-bordered">
-                <thead class="bg-primary">
-                  <tr>
-                    <th scope="col">Date</th>
-                    <th scope="col">Order No.</th>
-                    <th scope="col">Amount</th>
-                    <th scope="col">Amount</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">2024-03-25</th>
-                    <td>172381871218273981723</td>
-                    <td>370</td>
-                    <td>Paid</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2024-03-25</th>
-                    <td>172381871218273981723</td>
-                    <td>370</td>
-                    <td>Paid</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2024-03-25</th>
-                    <td>172381871218273981723</td>
-                    <td>370</td>
-                    <td>Paid</td>
-                  </tr>
-                </tbody>
-              </table>
+  <div class="custom-container-fluid text-primary d-flex justify-content-center align-items-center">
+    <nav class="navbar bg-secondary fixed-top" style="padding: 5px 10%;">
+      <div class="d-flex justify-content-between" style="width: 100%;">
+        <a href="index.html" class="navbar-brand">
+          <img class="logo" src="./img/logo maxwynn.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 me-3">
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html#about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html#redemption">REDEMPTION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html#events">NEWS & EVENTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html#downloads">DOWNLOAD</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/store.html">STORE</a>
+              </li>
+              <li class="dropdown nav-item">
+                <button class="border-0 dropdown-toggle bg-white fw-bold dropdowntext text-body-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ACCOUNT
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/profile.html">Profile</a></li>
+                  <li><a class="dropdown-item" href="/transactionHistory.html">Transaction History</a></li>
+                  <li><a class="dropdown-item" href="/register.html">Register</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/cart.html">CART</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </nav>
+    <div class="mt-5 transaction-item">
+        <h2 class="text-center">Transaction History</h2>
+        <table class="table table-striped table-bordered">
+          <thead class="bg-primary">
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Order No.</th>
+              <th scope="col">Amount</th>
+              <th scope="col">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">2024-03-25</th>
+              <td>172381871218273981723</td>
+              <td>370</td>
+              <td>Paid</td>
+            </tr>
+            <tr>
+              <th scope="row">2024-03-25</th>
+              <td>172381871218273981723</td>
+              <td>370</td>
+              <td>Paid</td>
+            </tr>
+            <tr>
+              <th scope="row">2024-03-25</th>
+              <td>172381871218273981723</td>
+              <td>370</td>
+              <td>Paid</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  </div>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>

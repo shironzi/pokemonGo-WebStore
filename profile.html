@@ -13,92 +13,101 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="custom-container-fluid text-primary justify-content-center align-items-center">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top px-5">
-            <a href="index.html" class="navbar-brand">
-              <img src="./img/logo maxwynn.png" alt="" class="logo">
-            </a>
-            <div class="navbar-collapse justify-content-end" id="navbarExample">
-              <ul class="navbar-nav">
-                <li class="nav-item mx-2">
-                  <a href="/index.html" class="nav-link fw-bold">HOME</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/index.html#about" class="nav-link fw-bold">ABOUT</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/index.html#redemption" class="nav-link fw-bold">REDEMPTION</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/index.html#downloads" class="nav-link fw-bold">DOWNLOAD</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/index.html#events" class="nav-link fw-bold">NEWS & EVENTS</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/store.html" class="nav-link fw-bold">STORE</a>
-                </li>
-                <li class="dropdown nav-item mx-2">
-                  <button class="btn btn-secondary dropdown-toggle fw-bold dropdowntext" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    ACCOUNT
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/profile.html">Profile</a></li>
-                    <li><a class="dropdown-item" href="/transactionHistory.html">Transaction History</a></li>
-                    <li><a class="dropdown-item" href="/register.html">Register</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/cart.html" class="nav-link fw-bold">CART</a>
-                </li>
-              </ul>
-            </div>
-        </nav>
-        <div class="my-5 px-5">
-              <div class="row d-flex justify-content-center align-items-center h-100 px-5">
-                <div class="col">
-                  <div class="card mb-3" style="border-radius: .5rem;">
-                    <div class="row g-0">
-                      <div class="col-md-4 gradient-custom text-center text-white"
-                        style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
-                        <img src="https://i.pinimg.com/736x/18/d9/e1/18d9e1307018dbc76750ca7d5124fccd.jpg"
-                          alt="Avatar" class="img-fluid my-5 rounded-circle" style="width: 200px;" />
-                        <h4 class="pb-5 fw-semibold">John Hanke</h4>
+  <div class="custom-container-fluid text-primary justify-content-center align-items-center">
+    <nav class="navbar bg-secondary fixed-top" style="padding: 5px 10%;">
+      <div class="d-flex justify-content-between" style="width: 100%;">
+        <a href="index.html" class="navbar-brand">
+          <img class="logo" src="./img/logo maxwynn.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 me-3">
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html#about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html#redemption">REDEMPTION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html#events">NEWS & EVENTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html#downloads">DOWNLOAD</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/store.html">STORE</a>
+              </li>
+              <li class="dropdown nav-item">
+                <button class="border-0 dropdown-toggle bg-white fw-bold dropdowntext text-body-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ACCOUNT
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/profile.html">Profile</a></li>
+                  <li><a class="dropdown-item" href="/transactionHistory.html">Transaction History</a></li>
+                  <li><a class="dropdown-item" href="/register.html">Register</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/cart.html">CART</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="my-5 px-3 px-md-5">
+      <div class="row justify-content-center align-items-center">
+          <div class="col-md-15">
+              <div class="card mb-5" style="border-radius: .5rem;">
+                  <div class="row g-0">
+                      <div class="col-md-3 gradient-custom text-center text-white"
+                          style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+                          <img src="https://i.pinimg.com/736x/18/d9/e1/18d9e1307018dbc76750ca7d5124fccd.jpg" alt="Avatar"
+                              class="img-fluid my-5 rounded-circle" style="width: 200px;" />
+                          <h4 class="pb-5 fw-semibold">John Hanke</h4>
                       </div>
                       <div class="col-md-8">
-                        <div class="card-body p-4">
-                          <h6>Information</h6>
-                          <hr class="mt-0 mb-4">
-                          <div class="row pt-1">
-                            <div class="col-6 mb-3">
-                                <h6>Player Id</h6>
-                                <p class="text-muted">5684312</p>
+                          <div class="card-body p-4">
+                              <h6>Information</h6>
+                              <hr class="mt-0 mb-4">
+                              <div class="row pt-1">
+                                  <div class="col-md-6 mb-3">
+                                      <h6>Player Id</h6>
+                                      <p class="text-muted">5684312</p>
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                      <h6>Email</h6>
+                                      <p class="text-muted">pokemonGo@game.com</p>
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                      <h6>IGN</h6>
+                                      <p class="text-muted">ash9238</p>
+                                  </div>
                               </div>
-                            <div class="col-6 mb-3">
-                              <h6>Email</h6>
-                              <p class="text-muted">pokemonGo@game.com</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                              <h6>IGN</h6>
-                              <p class="text-muted">ash9238</p>
-                            </div>
-                            
+                              <hr class="mt-0 mb-4">
+                              <div class="row pt-1">
+                                  <div class="col-md-6 mb-3">
+                                      <h6>Medals</h6>
+                                      <p class="text-muted">none</p>
+                                  </div>
+                              </div>
                           </div>
-                          <hr class="mt-0 mb-4">
-                          <div class="row pt-1">
-                            <div class="col-6 mb-3">
-                              <h6>Medals</h6>
-                              <p class="text-muted">none</p>
-                            </div>
-                          </div>
-                        </div>
                       </div>
-                    </div>
                   </div>
-                </div>
               </div>
-            </div>
+          </div>
+      </div>
     </div>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  </div>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>

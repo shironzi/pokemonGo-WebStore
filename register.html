@@ -10,83 +10,95 @@
     
     <title>Document</title>
 </head>
-<body>
-    <div class="login custom-container-fluid text-primary d-flex justify-content-center align-items-center">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top px-5">
-            <a href="index.html" class="navbar-brand">
-              <img src="./img/logo maxwynn.png" alt="" class="logo">
-            </a>
-            <div class="navbar-collapse justify-content-end" id="navbarExample">
-              <ul class="navbar-nav">
-                <li class="nav-item mx-2">
-                  <a href="/index.html" class="nav-link fw-bold">HOME</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/index.html#about" class="nav-link fw-bold">ABOUT</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/index.html#redemption" class="nav-link fw-bold">REDEMPTION</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/index.html#downloads" class="nav-link fw-bold">DOWNLOAD</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/index.html#events" class="nav-link fw-bold">NEWS & EVENTS</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/store.html" class="nav-link fw-bold">STORE</a>
-                </li>
-                <li class="dropdown nav-item mx-2">
-                  <button class="btn btn-secondary dropdown-toggle fw-bold dropdowntext" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    ACCOUNT
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/profile.html">Profile</a></li>
-                    <li><a class="dropdown-item" href="/transactionHistory.html">Transaction History</a></li>
-                    <li><a class="dropdown-item" href="/register.html">Register</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item mx-2">
-                  <a href="/cart.html" class="nav-link fw-bold">CART</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-
-
-
-
-        <div class="justify-content-center align-items-center" style="width: 25%;">
-            <form class="card" id="inputPassword">
-                <img src="./img/pichachu.png" alt="" class="w-100 h-auto">
-                <img src="./img/pokemon-ball.png" alt="" class="border border-4 border-light bg-light rounded-circle" style="width:15%; margin:auto; margin-top:-32px;">
-                <div class="px-4 pt-2 pb-4">
-                    <h2 class="card-title fw-bold">Register</h2>
-                        <div class="mb-3">
-                            <label for="playerId" class="form-label fw-semibold">Player ID</label>
-                            <input type="text" class="form-control" id="playerId" value="0" aria-describedby="playerIdHelp" readonly disabled>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" id="ign" placeholder="IGN" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" id="InputEmail" placeholder="Email address" required>
-                        </div>
-                        <div id="passwordAlert" class="alert alert-danger" style="display: none;">
-                            <h6>Please make sure the password you enter is same.</h6>
-                        </div>
-                        <div class="mb-3">
-                            <input type="password" class="form-control" id="Password" placeholder="Password" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="password" class="form-control" id="ConfirmPassword" placeholder="Confirm Password" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary fw-bold" style="width: 100%;" id="submit">Sign Up</button>
-                </div>
-            </form>
+<body style="height: 100vh;">
+  <div class="login custom-container-fluid text-primary d-flex justify-content-center align-items-center">
+    <nav class="navbar bg-secondary fixed-top" style="padding: 5px 10%;">
+      <div class="d-flex justify-content-between" style="width: 100%;">
+        <a href="index.html" class="navbar-brand">
+          <img class="logo" src="./img/logo maxwynn.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 me-3">
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html#about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html#redemption">REDEMPTION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html#events">NEWS & EVENTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/index.html#downloads">DOWNLOAD</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/store.html">STORE</a>
+              </li>
+              <li class="dropdown nav-item">
+                <button class="border-0 dropdown-toggle bg-white fw-bold dropdowntext text-body-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ACCOUNT
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/profile.html">Profile</a></li>
+                  <li><a class="dropdown-item" href="/transactionHistory.html">Transaction History</a></li>
+                  <li><a class="dropdown-item" href="/register.html">Register</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/cart.html">CART</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </nav>
+    <div class="justify-content-center align-items-center" style="width: 100%;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form class="card" id="inputPassword">
+              <img src="./img/pichachu.png" alt="" class="w-100 h-auto">
+              <img src="./img/pokemon-ball.png" alt="" class="border border-4 border-light bg-light rounded-circle" style="width:15%; margin:auto; margin-top:-32px;">
+              <div class="px-4 pt-2 pb-4">
+                  <h2 class="card-title fw-bold">Register</h2>
+                  <div class="mb-3">
+                      <label for="playerId" class="form-label fw-semibold">Player ID</label>
+                      <input type="text" class="form-control" id="playerId" value="0" aria-describedby="playerIdHelp" readonly disabled>
+                  </div>
+                  <div class="mb-3">
+                      <input type="text" class="form-control" id="ign" placeholder="IGN" required>
+                  </div>
+                  <div class="mb-3">
+                      <input type="email" class="form-control" id="InputEmail" placeholder="Email address" required>
+                  </div>
+                  <div id="passwordAlert" class="alert alert-danger" style="display: none;">
+                      <h6>Please make sure the password you enter is same.</h6>
+                  </div>
+                  <div class="mb-3">
+                      <input type="password" class="form-control" id="Password" placeholder="Password" required>
+                  </div>
+                  <div class="mb-3">
+                      <input type="password" class="form-control" id="ConfirmPassword" placeholder="Confirm Password" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary fw-bold" style="width: 100%;" id="submit">Sign Up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-    <script src="./js/register.js"></script>
+  </div>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  <script src="./js/register.js"></script>
 </body>
 </html>
