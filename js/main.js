@@ -64,3 +64,5 @@ const item1 = new ShoppingCartItem(1);
 const item2 = new ShoppingCartItem(2);
 const item3 = new ShoppingCartItem(3);
 const item4 = new ShoppingCartItem(4);
+
+console.log("working")

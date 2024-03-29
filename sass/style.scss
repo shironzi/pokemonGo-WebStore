@@ -49,13 +49,16 @@ $spacers: (
     height: 500px;
 }
 
+news-item > div{
+    min-height: 100px;
+}
+
 .gradient-bg{
     background: linear-gradient(135deg, #1B262C, #0C405F, #3282B8, #BBE1FA);
 }
 
 .download-icons{
     width: fit-content;
-    max-width: 120px;
     display: block;
 }
 footer{
