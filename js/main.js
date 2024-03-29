@@ -1,26 +1,6 @@
 let subtotalElement = document.getElementById("subtotal");
 let subtotal = 0;
 
-// document.querySelectorAll(".remove-button").forEach(button => {
-//     button.addEventListener("click", () => {
-//         let row = button.closest("tr");
-//         subtotal -= price * quantity;
-//         row.remove();
-//     });
-// });
-
-// document.querySelectorAll(".remove-button").forEach(button => {
-//     button.addEventListener("click", () => {
-//         let row = button.closest("tr");
-//         let price = parseFloat(row.querySelector(".price-1").innerHTML);
-//         let quantity = parseInt(row.querySelector(".quantity").value);
-//         subtotal -= price * quantity;
-//         row.remove();
-//         updateSubtotal();
-//         console.log("running")
-//     });
-// });
-
 class ShoppingCartItem {
     constructor(itemId) {
         this.itemId = itemId;

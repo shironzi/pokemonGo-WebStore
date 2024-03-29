@@ -9,21 +9,6 @@ $primary: #1B262C;
 $secondary: #3282B8;
 $spacer: 1rem;
 
-// @include responsive-spacing;
-// @media (max-width: 768px) {
-
-//     $spacers: (
-//         0: 0,
-//         1: $spacer * .25,
-//         2: $spacer * .5,
-//         3: $spacer,
-//         4: $spacer * .25,
-//         5: $spacer * 500,
-//     );
-
-//     @include responsive-spacing;
-// }
-
 $spacers: (
     0: 0,
     1: $spacer * .25,
@@ -50,7 +35,7 @@ $spacers: (
 }
 
 .redemption {
-    background-image: url('/img/banner 1.png');
+    background-image: url('../img/redemptionBanner.png');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -91,7 +76,7 @@ li{
 
 .login {
     height: 100%;
-    background-image: url(../img/bg.jpg);
+    background-image: url('../img/bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
