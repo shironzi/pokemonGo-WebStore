@@ -97,9 +97,10 @@ li{
     padding: 20px;
     box-sizing: border-box;
 }
-.size > button{
-    width: 275px;
-    height: 275px;
+
+.itemContainer{
+    height: 350px;
+    min-width: 280px;
 }
 .size > button{
     width: 275px;
@@ -112,6 +113,14 @@ li{
 .size > button{
     width: 275px;
     height: 275px;
+}
+.size > button{
+    width: 275px;
+    height: 275px;
+}
+
+.coin-img{
+    width: 200px;
 }
 
 
@@ -161,5 +170,44 @@ li{
     width: fit-content; 
     min-width: 60vh;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.floating-alert {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffc107;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+
+.fadeIn {
+    animation: fadeIn 2s ease forwards;
+}
+
+.fadeOut {
+    animation: fadeOut 2s ease forwards;
+}
+
+
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

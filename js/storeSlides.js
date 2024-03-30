@@ -94,3 +94,25 @@ for (let i = 1; i <= 16; i++) {
 }
 
 
+document.querySelectorAll('.addToCart').forEach((button) => {
+    button.addEventListener('click', function() {
+        showFloatingAlert('Product added to cart!');
+    });
+});
+
+function showFloatingAlert(message) {
+    var alertElement = document.querySelector('.floatingAlert');
+    alertElement.textContent = message;
+    alertElement.classList.add('fadeIn');
+    alertElement.style.display = 'block';
+
+    setTimeout(function() {
+        alertElement.classList.remove('fadeIn');
+        alertElement.classList.add('fadeOut');
+        setTimeout(function() {
+            alertElement.style.display = 'none';
+            alertElement.classList.remove('fadeOut');
+        }, 1000);
+    }, 2000);
+    console.log("hello")
+}

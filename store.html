@@ -59,22 +59,25 @@
                 </div>
               </div>
             </div>
-          </nav>
-
-          <div class="justify-content-center py-5 px-md-5">
-            <div>
-                <h1 class="mb-3 text-center">LIMITED OFFERS</h1>
+        </nav>
+        <div class="py-5">
+            <div class="position-fixed end-0 mt-4" style="z-index: 1;">
+                <div class=" floating-alert alert alert-warning fade floatingAlert" role="alert">
+                    Product added to cart!
+                </div>
             </div>
+            <h1 class="text-center">LIMITED OFFERS</h1>
             <div class="d-flex justify-content-center">
-                <div class="card mb-3 p-4" style="max-width: 60%;">
+                <div class="card mb-3 p-4">
                     <div class="row g-0">
                         <div class="col-md-8">
                             <div class="d-flex flex-wrap">
                                 <h5 class="border me-2 mb-2 p-2 rounded bg-primary text-light fs-6">ONE TIME ONLY</h5>
                                 <h5 class="border mb-2 p-2 rounded bg-primary text-light fs-6">FEATURED</h5>
                             </div>
-                            <h3 class="card-title my-3">Rogue of the Jungle <br>(Web Version)</h3>
+                            <h3 class="card-title my-3">Rogue of the Jungle (Web Version)</h3>
                             <h5 class="border p-2 rounded bg-primary text-light fs-6" style="width: fit-content;">LIMITED-TIME ONLY</h5>
+                            <h4>₱439.10</h4>
                         </div>
                         <div class="col-md-4 d-flex justify-content-center align-items-center">
                             <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fweb-season-14-ticket-bundle.png&w=384&q=75" class="img-fluid rounded-start" alt="...">
@@ -85,153 +88,180 @@
         </div>
         
 
-        <div id="carouselExampleProduct" class="carousel slide px-5">
-            <h1 class="pb-3">PACKAGES</h1>
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="indicatorsProduct active bg-primary " id="CoinsSlide1" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="indicatorsProduct bg-primary" id="CoinsSlide2" aria-label="Slide 2"></button>
+        <div id="carouselExampleProduct" class="carousel slide container">
+            <h1 class="pb-3 text-center">PACKAGES</h1>
+            <div class="carousel-indicators Product">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="indicatorsProduct active bg-primary " id="packageSlide1" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="indicatorsProduct bg-primary" id="packageSlide2" aria-label="Slide 2"></button>
             </div>
             <div class="carousel-inner pb-4">
-                <div class="carousel-item active d-flex justify-content-center size">
-                    <button class="card p-4 mx-2" id="itemButton1">
-                        <div class="front">
-                                <img src="./img/packages/Master-Trainer-Kit.png" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Master Trainer Kit</h5>
+                <div class="carousel-item active" >
+                    <div class="d-md-flex justify-content-center size" style="height: 350px; min-width: 300px;">
+                        <div class="card p-4 mx-2 itemContainer" id="itemButton1">
+                            <div class="front">
+                                <img src="img/packages/new-trainer-box.png" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">New Trainer Box</h5>
+                                </div>
+                                <h5>₱259.0</h5>
+                            </div>
+                            
+                            <div id="itemDescription1" class="itemDescriptionContainer active bg-primary text-light">
+                                <h5 class="card-title">New Trainer Box</h5>
+                                <p>This package Containes: </p>
+                                <p><img src="" alt="">15x Poké Ball</p>
+                                <p><img src="" alt="">3x Great Ball</p>
+                                <p><img src="" alt="">1x ultra Balls</p>
+                                <p><img src="" alt="">5x Potion</p>
+                                <button type="button" id="addToCart" class="btn btn-secondary text-light d-block mx-auto mt-3 text-center fw-bold addToCart" style="height: 40px;">
+                                    ADD TO CART
+                                </button>
                             </div>
                         </div>
-                        
-                        <div id="itemDescription1" class="itemDescriptionContainer active bg-primary text-light">
-                            <h5 class="card-title">Master Trainer Kit</h5>
-                            <p>This package Containes: </p>
-                            <p>1x<img src="" alt=""> Incubator Limited</p>
-                            <p>2x<img src="" alt=""> Max potion</p>
-                            <p>3x<img src="" alt=""> Incense</p>
-                            <p>20x<img src="" alt=""> Poke Ball</p>
-                        </div>
-                    </button>
-                    <button class="card p-4 mx-2" id="itemButton2">
-                        <div class="front">
-                                <img src="./img/packages/Master-Trainer-Kit.png" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Master Trainer Kit</h5>
+                        <div class="card p-4 mx-2 itemContainer" id="itemButton2">
+                            <div class="front">
+                                    <img src="img/packages/beginer-package.png" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Great Box</h5>
+                                </div>
+                                <h5>₱450.00</h5>
+                            </div>
+                            
+                            <div id="itemDescription2" class="itemDescriptionContainer active bg-primary text-light">
+                                <h5 class="card-title">Great Box</h5>
+                                <p>This package Containes: </p>
+                                <p><img src="" alt="">25x Poké Ball</p>
+                                <p><img src="" alt="">15x Great Ball</p>
+                                <p><img src="" alt="">5x ultra Ball</p>
+                                <p><img src="" alt="">3x Master Ball</p>
+                                <p><img src="" alt="">1x Premier Ball</p>
+                                <button type="button" id="" class="btn btn-secondary text-light d-block mx-auto mt-3 text-center fw-bold addToCart" style="height: 40px;">ADD TO CART</button>
                             </div>
                         </div>
-                        
-                        <div id="itemDescription2" class="itemDescriptionContainer active bg-primary text-light">
-                            <h5 class="card-title">Master Trainer Kit</h5>
-                            <p>This package Containes: </p>
-                            <p>1x<img src="" alt=""> Incubator Limited</p>
-                            <p>2x<img src="" alt=""> Max potion</p>
-                            <p>3x<img src="" alt=""> Incense</p>
-                            <p>20x<img src="" alt=""> Poke Ball</p>
-                        </div>
-                    </button>
-                    <button class="card p-4 mx-2" id="itemButton3">
-                        <div class="front">
-                                <img src="./img/packages/Master-Trainer-Kit.png" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Master Trainer Kit</h5>
+                        <div class="card p-4 mx-2 itemContainer" id="itemButton3">
+                            <div class="front">
+                                    <img src="img/packages/adventure-pack.png" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Adventure Item Box</h5>
+                                </div>
+                                <h5>₱850.00</h5>
+                            </div>
+                            
+                            <div id="itemDescription3" class="itemDescriptionContainer active bg-primary text-light">
+                                <h5 class="card-title">Adventure Item Box</h5>
+                                <p>This package Containes: </p>
+                                <p><img src="" alt=""> 30x Poke Balls</p>
+                                <p><img src="" alt=""> 15x Razz Berries</p>
+                                <p><img src="" alt=""> 3x Egg Incubator</p>
+                                <p><img src="" alt=""> 1x Lucky Egg</p>
+                                <p><img src="" alt=""> 1x Premium Raid Passes</p>
+                                <button type="button" id="" class="btn btn-secondary text-light d-block mx-auto mt-3 text-center fw-bold addToCart" style="height: 40px;">ADD TO CART</button>
                             </div>
                         </div>
-                        
-                        <div id="itemDescription3" class="itemDescriptionContainer active bg-primary text-light">
-                            <h5 class="card-title">Master Trainer Kit</h5>
-                            <p>This package Containes: </p>
-                            <p>1x<img src="" alt=""> Incubator Limited</p>
-                            <p>2x<img src="" alt=""> Max potion</p>
-                            <p>3x<img src="" alt=""> Incense</p>
-                            <p>20x<img src="" alt=""> Poke Ball</p>
-                        </div>
-                    </button>
-                    <button class="card p-4 mx-2" id="itemButton4">
-                        <div class="front">
-                                <img src="./img/packages/Master-Trainer-Kit.png" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Master Trainer Kit</h5>
+                        <div class="card p-4 mx-2 itemContainer" id="itemButton4">
+                            <div class="front">
+                                    <img src="img/packages/Hatch_Box.png" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Hatch Box</h5>
+                                </div>
+                                <h5>₱1,150.00</h5>
+                            </div>
+                            
+                            <div id="itemDescription4" class="itemDescriptionContainer active bg-primary text-light">
+                                <h5 class="card-title">Hatch Box</h5>
+                                <p>This package Containes: </p>
+                                <p><img src="" alt="">20x Poke Balls</p>
+                                <p><img src="" alt="">10x Pinap Berries</p>
+                                <p><img src="" alt="">5x Revives</p>
+                                <p><img src="" alt="">5x Regular Incubators</p>
+                                <p><img src="" alt="">6x Lucky Eggs</p>
+                                <button type="button" id="" class="btn btn-secondary text-light d-block mx-auto mt-3 text-center fw-bold addToCart" style="height: 40px;">ADD TO CART</button>
                             </div>
                         </div>
-                        
-                        <div id="itemDescription4" class="itemDescriptionContainer active bg-primary text-light">
-                            <h5 class="card-title">Master Trainer Kit</h5>
-                            <p>This package Containes: </p>
-                            <p>1x<img src="" alt=""> Incubator Limited</p>
-                            <p>2x<img src="" alt=""> Max potion</p>
-                            <p>3x<img src="" alt=""> Incense</p>
-                            <p>20x<img src="" alt=""> Poke Ball</p>
-                        </div>
-                    </button>
+                    </div>
                 </div>
                 <div class="carousel-item Product">
-                    <div class="carousel-item active d-flex justify-content-center size">
-                        <button class="card p-4 mx-2" id="itemButton5">
+                    <div class="d-md-flex justify-content-center size" style="height: 350px; min-width: 300px;">
+                        <div class="card p-4 mx-2" id="itemButton5">
                             <div class="front">
-                                    <img src="./img/packages/Epic_Adventure_Pack.png" class="card-img" alt="...">
+                                    <img src="img/packages/Epic_Adventure_Pack.png" class="card-img" alt="...">
                                 <div class="card-img-overlay">
-                                    <h5 class="card-title">Master Trainer Kit</h5>
+                                    <h5 class="card-title">Epic Box</h5>
                                 </div>
+                                <h5>₱1,459.00</h5>
                             </div>
                             
                             <div id="itemDescription5" class="itemDescriptionContainer active bg-primary text-light">
-                                <h5 class="card-title">Master Trainer Kit</h5>
+                                <h5 class="card-title">Epic Box</h5>
                                 <p>This package Containes: </p>
-                                <p>1x<img src="" alt=""> Incubator Limited</p>
-                                <p>2x<img src="" alt=""> Max potion</p>
-                                <p>3x<img src="" alt=""> Incense</p>
-                                <p>20x<img src="" alt=""> Poke Ball</p>
+                                <p><img src="" alt="">8x Super Incubators</p>
+                                <p><img src="" alt="">10,000 Stardust</p>
+                                <p><img src="" alt="">30x Ultra Balls</p>
+                                <p><img src="" alt="">15x Golden Razz Berries</p>
+                                <p><img src="" alt="">10x Max Revives</p>
+                                <button type="button" id="" class="btn btn-secondary text-light d-block mx-auto mt-3 text-center fw-bold addToCart" style="height: 40px;">ADD TO CART</button>
                             </div>
-                        </button>
-                        <button class="card p-4 mx-2" id="itemButton6">
+                        </div>
+                        <div class="card p-4 mx-2" id="itemButton6">
                             <div class="front">
-                                <img src="./img/packages/Epic_Adventure_Pack.png" class="card-img" alt="...">
+                                <img src="img/packages/explorer.png" class="card-img" alt="...">
                                 <div class="card-img-overlay">
-                                    <h5 class="card-title">Master Trainer Kit</h5>
+                                    <h5 class="card-title">Silver Box</h5>
                                 </div>
+                                <h5>₱1,729.00</h5>
                             </div>
                             
                             <div id="itemDescription6" class="itemDescriptionContainer active bg-primary text-light">
-                                <h5 class="card-title">Master Trainer Kit</h5>
+                                <h5 class="card-title">Silver Box</h5>
                                 <p>This package Containes: </p>
-                                <p>1x<img src="" alt=""> Incubator Limited</p>
-                                <p>2x<img src="" alt=""> Max potion</p>
-                                <p>3x<img src="" alt=""> Incense</p>
-                                <p>20x<img src="" alt=""> Poke Ball</p>
+                                <p><img src="" alt="">5x Regular Incubators</p>
+                                <p><img src="" alt="">20x Great Balls</p>
+                                <p><img src="" alt="">10x Nanab Berries</p>
+                                <p><img src="" alt="">5x Max Revives</p>
+                                <p><img src="" alt="">1x Mossy Lure Module</p>
+                                <button type="button" id="" class="btn btn-secondary text-light d-block mx-auto mt-3 text-center fw-bold addToCart" style="height: 40px;">ADD TO CART</button>
                             </div>
-                        </button>
-                        <button class="card p-4 mx-2" id="itemButton7">
+                        </div>
+                        <div class="card p-4 mx-2" id="itemButton7">
                             <div class="front">
-                                <img src="./img/packages/Epic_Adventure_Pack.png" class="card-img" alt="...">
+                                <img src="img/packages/anniversary-box.png" class="card-img" alt="...">
                                 <div class="card-img-overlay">
-                                    <h5 class="card-title">Master Trainer Kit</h5>
+                                    <h5 class="card-title">Anniversary Box</h5>
                                 </div>
+                                <h5>₱2,150.00</h5>
                             </div>
                             
                             <div id="itemDescription7" class="itemDescriptionContainer active bg-primary text-light">
-                                <h5 class="card-title">Master Trainer Kit</h5>
+                                <h5 class="card-title">Ultra Box</h5>
                                 <p>This package Containes: </p>
-                                <p>1x<img src="" alt=""> Incubator Limited</p>
-                                <p>2x<img src="" alt=""> Max potion</p>
-                                <p>3x<img src="" alt=""> Incense</p>
-                                <p>20x<img src="" alt=""> Poke Ball</p>
+                                <p><img src="" alt="">5x Super Incubators</p>
+                                <p><img src="" alt="">15,000 Stardust</p>
+                                <p><img src="" alt="">40x Ultra Balls</p>
+                                <p><img src="" alt="">20x Golden Razz Berries</p>
+                                <p><img src="" alt="">10x Max Revives</p>
+                                <button type="button" class="btn btn-secondary text-light d-block mx-auto mt-3 text-center fw-bold" style="height: 40px;">ADD TO CART</button>
                             </div>
-                        </button>
-                        <button class="card p-4 mx-2" id="itemButton8">
+                        </div>
+                        <div class="card p-4 mx-2" id="itemButton8">
                             <div class="front">
-                                <img src="./img/packages/Epic_Adventure_Pack.png" class="card-img" alt="...">
+                                <img src="img/packages/season-pass.png" class="card-img" alt="...">
                                 <div class="card-img-overlay">
-                                    <h5 class="card-title">Master Trainer Kit</h5>
+                                    <h5 class="card-title">Gold Box</h5>
                                 </div>
+                                <h5>₱2,950.00</h5>
                             </div>
                             
                             <div id="itemDescription8" class="itemDescriptionContainer active bg-primary text-light">
-                                <h5 class="card-title">Master Trainer Kit</h5>
+                                <h5 class="card-title">Gold Box</h5>
                                 <p>This package Containes: </p>
-                                <p>1x<img src="" alt=""> Incubator Limited</p>
-                                <p>2x<img src="" alt=""> Max potion</p>
-                                <p>3x<img src="" alt=""> Incense</p>
-                                <p>20x<img src="" alt=""> Poke Ball</p>
+                                <p><img src="" alt="">10x Regular Incubators</p>
+                                <p><img src="" alt="">50x Ultra Balls</p>
+                                <p><img src="" alt="">25x Golden Razz Berries</p>
+                                <p><img src="" alt="">15x Max Revives</p>
+                                <p><img src="" alt="">4x Magnetic Lure Modules</p>
+                                <button type="button" id="" class="btn btn-secondary text-light d-block mx-auto mt-3 text-center fw-bold addToCart" style="height: 40px;">ADD TO CART</button>
                             </div>
-                        </button>
+                        </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev bg-primary" id="packagePrev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -241,163 +271,95 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </button>
             </div>
-            
         </div>
 
 
         <!-- coins -->
 
 
-        <div id="carouselExampleCoins" class="carousel slide px-5">
-            <h1 class="pb-3">COINS</h1>
+        <div id="carouselExampleCoins" class="carousel slide container">
+            <h1 class="pb-3 text-center">COINS</h1>
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="IndicatorsCoins active bg-primary " id="CoinsSlide1" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="IndicatorsCoins bg-primary" id="CoinsSlide2" aria-label="Slide 2"></button>
             </div>
-            <div class="carousel-inner pb-4">
-                <div class="carousel-item active d-flex justify-content-center size">
-                    <button class="card p-4 mx-2 size" id="itemButton9">
-                        <div class="front">
-                                <img src="./img/packages/Master-Trainer-Kit.png" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Master Trainer Kit</h5>
-                            </div>
-                        </div>
-                        
-                        <div id="itemDescription9" class="itemDescriptionContainer active bg-primary text-light">
-                            <h5 class="card-title">Master Trainer Kit</h5>
-                            <p>This package Containes: </p>
-                            <p>1x<img src="" alt=""> Incubator Limited</p>
-                            <p>2x<img src="" alt=""> Max potion</p>
-                            <p>3x<img src="" alt=""> Incense</p>
-                            <p>20x<img src="" alt=""> Poke Ball</p>
-                        </div>
-                    </button>
-                    <button class="card p-4 mx-2 size" id="itemButton10">
-                        <div class="front">
-                                <img src="./img/packages/Master-Trainer-Kit.png" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Master Trainer Kit</h5>
-                            </div>
-                        </div>
-                        
-                        <div id="itemDescription10" class="itemDescriptionContainer active bg-primary text-light">
-                            <h5 class="card-title">Master Trainer Kit</h5>
-                            <p>This package Containes: </p>
-                            <p>1x<img src="" alt=""> Incubator Limited</p>
-                            <p>2x<img src="" alt=""> Max potion</p>
-                            <p>3x<img src="" alt=""> Incense</p>
-                            <p>20x<img src="" alt=""> Poke Ball</p>
-                        </div>
-                    </button>
-                    <button class="card p-4 mx-2" id="itemButton11">
-                        <div class="front">
-                                <img src="./img/packages/Master-Trainer-Kit.png" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Master Trainer Kit</h5>
-                            </div>
-                        </div>
-                        
-                        <div id="itemDescription11" class="itemDescriptionContainer active bg-primary text-light">
-                            <h5 class="card-title">Master Trainer Kit</h5>
-                            <p>This package Containes: </p>
-                            <p>1x<img src="" alt=""> Incubator Limited</p>
-                            <p>2x<img src="" alt=""> Max potion</p>
-                            <p>3x<img src="" alt=""> Incense</p>
-                            <p>20x<img src="" alt=""> Poke Ball</p>
-                        </div>
-                    </button>
-                    <button class="card p-4 mx-2" id="itemButton12">
-                        <div class="front">
-                                <img src="./img/packages/Master-Trainer-Kit.png" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Master Trainer Kit</h5>
-                            </div>
-                        </div>
-                        
-                        <div id="itemDescription12" class="itemDescriptionContainer active bg-primary text-light">
-                            <h5 class="card-title">Master Trainer Kit</h5>
-                            <p>This package Containes: </p>
-                            <p>1x<img src="" alt=""> Incubator Limited</p>
-                            <p>2x<img src="" alt=""> Max potion</p>
-                            <p>3x<img src="" alt=""> Incense</p>
-                            <p>20x<img src="" alt=""> Poke Ball</p>
-                        </div>
-                    </button>
-                </div>
-                <div class="carousel-item Coins">
-                    <div class="carousel-item active d-flex justify-content-center size">
-                        <button class="card p-4 mx-2" id="itemButton13">
+            <div class="carousel-inner pb-4 justify-content-center align-items-center">
+                <div class="carousel-item active">
+                    <div class="d-md-flex justify-content-center size">
+                        <div class="card p-4 mx-2" id="">
                             <div class="front">
-                                    <img src="./img/packages/Epic_Adventure_Pack.png" class="card-img" alt="...">
+                                <img src="img/coins/coin1.png" class="coin-img" alt="...">
                                 <div class="card-img-overlay">
-                                    <h5 class="card-title">Master Trainer Kit</h5>
+                                    <h5 class="card-title">200 PokéCoins</h5>
                                 </div>
                             </div>
-                            
-                            <div id="itemDescription13" class="itemDescriptionContainer active bg-primary text-light">
-                                <h5 class="card-title">Master Trainer Kit</h5>
-                                <p>This package Containes: </p>
-                                <p>1x<img src="" alt=""> Incubator Limited</p>
-                                <p>2x<img src="" alt=""> Max potion</p>
-                                <p>3x<img src="" alt=""> Incense</p>
-                                <p>20x<img src="" alt=""> Poke Ball</p>
-                            </div>
-                        </button>
-                        <button class="card p-4 mx-2" id="itemButton14">
+                            <h5>₱69.00</h5>
+                            <button type="button" class="btn btn-success text-light d-block mx-auto mt-3 text-center fw-bold addToCart" style="height: 40px; cursor: pointer; z-index: 1;">ADD TO CART</button>
+                        </div>
+                        <div class="card p-4 mx-2" id="">
                             <div class="front">
-                                <img src="./img/packages/Epic_Adventure_Pack.png" class="card-img" alt="...">
+                                <img src="img/coins/coin2.png" class="coin-img" alt="...">
                                 <div class="card-img-overlay">
-                                    <h5 class="card-title">Master Trainer Kit</h5>
+                                    <h5 class="card-title">600 PokéCoins</h5>
                                 </div>
+                                <h6 class="border mb-2 p-2 rounded bg-primary text-light fs-6">50 WEB STORE BONUS COINS</h6> 
                             </div>
-                            
-                            <div id="itemDescription14" class="itemDescriptionContainer active bg-primary text-light">
-                                <h5 class="card-title">Master Trainer Kit</h5>
-                                <p>This package Containes: </p>
-                                <p>1x<img src="" alt=""> Incubator Limited</p>
-                                <p>2x<img src="" alt=""> Max potion</p>
-                                <p>3x<img src="" alt=""> Incense</p>
-                                <p>20x<img src="" alt=""> Poke Ball</p>
-                            </div>
-                        </button>
-                        <button class="card p-4 mx-2" id="itemButton15">
+                            <h5>₱149.00</h5>
+                            <button type="button" class="btn btn-success text-light d-block mx-auto mt-3 text-center fw-bold addToCart" style="height: 40px; cursor: pointer; z-index: 1;">ADD TO CART</button>
+                        </div>
+                        <div class="card p-4 mx-2" id="">
                             <div class="front">
-                                <img src="./img/packages/Epic_Adventure_Pack.png" class="card-img" alt="...">
+                                <img src="img/coins/coin3.png" class="coin-img" alt="...">
                                 <div class="card-img-overlay">
-                                    <h5 class="card-title">Master Trainer Kit</h5>
+                                    <h5 class="card-title">1,300 PokéCoins</h5>
                                 </div>
+                                <h6 class="border mb-2 p-2 rounded bg-primary text-light fs-6">100 WEB STORE BONUS COINS</h6> 
                             </div>
-                            
-                            <div id="itemDescription15" class="itemDescriptionContainer active bg-primary text-light">
-                                <h5 class="card-title">Master Trainer Kit</h5>
-                                <p>This package Containes: </p>
-                                <p>1x<img src="" alt=""> Incubator Limited</p>
-                                <p>2x<img src="" alt=""> Max potion</p>
-                                <p>3x<img src="" alt=""> Incense</p>
-                                <p>20x<img src="" alt=""> Poke Ball</p>
-                            </div>
-                        </button>
-                        <button class="card p-4 mx-2" id="itemButton16">
-                            <div class="front">
-                                <img src="./img/packages/Epic_Adventure_Pack.png" class="card-img" alt="...">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title">Master Trainer Kit</h5>
-                                </div>
-                            </div>
-                            
-                            <div id="itemDescription16" class="itemDescriptionContainer active bg-primary text-light">
-                                <h5 class="card-title">Master Trainer Kit</h5>
-                                <p>This package Containes: </p>
-                                <p>1x<img src="" alt=""> Incubator Limited</p>
-                                <p>2x<img src="" alt=""> Max potion</p>
-                                <p>3x<img src="" alt=""> Incense</p>
-                                <p>20x<img src="" alt=""> Poke Ball</p>
-                            </div>
-                        </button>
+                            <h5>₱289.00</h5>
+                            <button type="button" class="btn btn-success text-light d-block mx-auto mt-3 text-center fw-bold addToCart" style="height: 40px; cursor: pointer; z-index: 1;">ADD TO CART</button>
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev bg-primary me-3" id="CoinPrev" type="button" data-bs-target="#carouselExampleCoins" data-bs-slide="prev">
+                <div class="carousel-item">
+                    <div class="d-md-flex justify-content-center size">
+                        <div class="card p-4 mx-2" id="">
+                            <div class="front">
+                                <img src="img/coins/coin4.png" class="coin-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">2,700 PokéCoins</h5>
+                                </div>
+                                <h6 class="border mb-2 p-2 rounded bg-primary text-light fs-6">200 WEB STORE BONUS COINS</h6> 
+                            </div>
+                            <h5>₱589.00</h5>
+                            <button type="button" class="btn btn-success text-light d-block mx-auto mt-3 text-center fw-bold addToCart" style="height: 40px; cursor: pointer; z-index: 1;">ADD TO CART</button>
+                        </div>
+                        <div class="card p-4 mx-2" id="">
+                            <div class="front">
+                                <img src="img/coins/coin5.png" class="coin-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">5,600 PokéCoins</h5>
+                                </div>
+                                <h6 class="border mb-2 p-2 rounded bg-primary text-light fs-6">1000 WEB STORE BONUS COINS</h6> 
+                                
+                            </div>
+                            <h5>₱1,169.00</h5>
+                            <button type="button" class="btn btn-success text-light d-block mx-auto mt-3 text-center fw-bold addToCart" style="height: 40px; cursor: pointer; z-index: 1;">ADD TO CART</button>
+                        </div>
+                        <div class="card p-4 mx-2" id="">
+                            <div class="front">
+                                <img src="img/coins/coin6.png" class="coin-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">15,500 PokéCoins</h5>
+                                </div>
+                                <h6 class="border mb-2 p-2 rounded bg-primary text-light fs-6">1000 WEB STORE BONUS COINS</h6> 
+                                
+                            </div>
+                            <h5>₱2,950.00</h5>
+                            <button type="button" class="btn btn-success text-light d-block mx-auto mt-3 text-center fw-bold addToCart" style="height: 40px; cursor: pointer; z-index: 1;">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev bg-primary" id="CoinPrev" type="button" data-bs-target="#carouselExampleCoins" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </button>
                 <button class="carousel-control-next bg-primary" id="CoinNext" type="button" data-bs-target="#carouselExampleCoins" data-bs-slide="next">
@@ -406,73 +368,75 @@
             </div>
         </div>
     </div>
-    <footer class="justify-content-center align-items-center py-3 px-5 bg-primary">
-        <div class="d-flex justify-content-between py-3">
-          <div class="d-flex">
-            <ul class="navbar-nav  icon-color">
-              <li class="nav-item mx-2">
-                <a href="#" class="nav-link ">HOME</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a href="#" class="nav-link ">ABOUT</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a href="#" class="nav-link ">REDEMPTION</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav icon-color ps-4">
-              <li class="nav-item mx-2">
-                <a href="#" class="nav-link">DOWNLOAD</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a href="#" class="nav-link ">EVENTS</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a href="#" class="nav-link ">NEWS</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <a href=""><i class="bi bi-youtube mx-3 icon-color fs-4"></i></a>
-            <a href=""><i class="bi bi-facebook mx-3 icon-color fs-4"></i></a>
-            <a href=""><i class="bi bi-instagram mx-3 icon-color fs-4"></i></a>
-            <a href=""><i class="bi bi-tiktok mx-3 icon-color fs-4"></i></a>
-          </div>
-          <div>
-            <a href=""><img class="mx-2" src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsite_assets%2Ftpc-logo.png&w=128&q=75" alt=""></a>
-            <a href=""><img class="mx-2" src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsite_assets%2Fniantic-logo.png&w=64&q=75" alt=""></a>
-          </div>
+    <footer style="padding: 0 10%;">
+        <div class="justify-content-center align-items-center py-3 bg-primary">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-center">
+                <div class="container-fluid">
+                    <ul class="navbar-nav icon-color d-flex flex-wrap justify-content-center">
+                    <li class="nav-item mx-2">
+                        <a href="#" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="#" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="#" class="nav-link">REDEMPTION</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="#" class="nav-link">DOWNLOAD</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="#" class="nav-link">EVENTS</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="#" class="nav-link">NEWS</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+                <div>
+                <a href=""><i class="bi bi-youtube mx-3 icon-color fs-4"></i></a>
+                <a href=""><i class="bi bi-facebook mx-3 icon-color fs-4"></i></a>
+                <a href=""><i class="bi bi-instagram mx-3 icon-color fs-4"></i></a>
+                <a href=""><i class="bi bi-tiktok mx-3 icon-color fs-4"></i></a>
+                </div>
+                <div class="">
+                <a href=""><img class="mx-2 img-fluid" src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsite_assets%2Ftpc-logo.png&w=128&q=75" alt=""></a>
+                <a href=""><img class="mx-2 img-fluid" src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsite_assets%2Fniantic-logo.png&w=64&q=75" alt=""></a>
+                </div>
+            </div>
+            <hr class="text-light">
+            <div class="my-2">
+                <ul class="text-center d-flex justify-content-center">
+                <li class="col-md-1">
+                    <a href="#!" class="text-white img-fluid" style="text-decoration: none;">About us</a>
+                </li>
+                <li class="col-md-1">
+                    <a href="#!" class="text-white img-fluid" style="text-decoration: none;">Products</a>
+                </li>
+                    <li class="col-md-1">
+                    <a href="#!" class="text-white img-fluid" style="text-decoration: none;">Awards</a>
+                    </li>     
+                    <li class="col-md-1">
+                    <a href="#!" class="text-white img-fluid" style="text-decoration: none;">Help</a>
+                    </li>  
+                    <li class="col-md-1">
+                    <a href="#!" class="text-white"style="text-decoration: none;">Contact</a>
+                    </li>
+                </ul>
+                </div>
+                <hr class="text-light">
+            </div>
+            <div class="bg-primary icon-color text-center container">
+                <p>Pokémon GO is playable in English, French, German, Italian, Russian, Japanese, Spanish, Traditional Chinese, Korean, Thai, Brazillian Portuguese, Turkish, and Indonesian.</p>
+                <br>
+                <p> ©2023 Niantic, Inc. ©2023 Pokémon. ©1995 - 2023 Nintendo / Creatures Inc. / GAME FREAK inc. Pokémon and Pokémon character names are trademarks of Nintendo. Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Android, Google Play and the Google Play logo are trademarks of Google LLC. During gameplay, please be aware of your surroundings and play safely.</p>
+            </div>
         </div>
-        <hr class="text-light">
-        <div class="my-2">
-          <ul class="text-center d-flex justify-content-center">
-            <li class="col-md-1">
-               <a href="#!" class="text-white" style="text-decoration: none;">About us</a>
-            </li>
-            <li class="col-md-1">
-              <a href="#!" class="text-white" style="text-decoration: none;">Products</a>
-            </li>
-            <li class="col-md-1">
-              <a href="#!" class="text-white" style="text-decoration: none;">Awards</a>
-            </li>     
-            <li class="col-md-1">
-              <a href="#!" class="text-white" style="text-decoration: none;">Help</a>
-            </li>  
-            <li class="col-md-1">
-              <a href="#!" class="text-white"style="text-decoration: none;">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <hr class="text-light">
-      </div>
-      <div class="bg-primary icon-color text-center py-3 px-5">
-        <p>Pokémon GO is playable in English, French, German, Italian, Russian, Japanese, Spanish, Traditional Chinese, Korean, Thai, Brazillian Portuguese, Turkish, and Indonesian.</p>
-        <br>
-        <p> ©2023 Niantic, Inc. ©2023 Pokémon. ©1995 - 2023 Nintendo / Creatures Inc. / GAME FREAK inc. Pokémon and Pokémon character names are trademarks of Nintendo. Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Android, Google Play and the Google Play logo are trademarks of Google LLC. During gameplay, please be aware of your surroundings and play safely.</p>
-      </div>
     </footer>
 
-    <script src="/js/storeSlides.js"></script>
+    <script src="js/storeSlides.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
